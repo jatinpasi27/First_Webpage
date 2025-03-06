@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta name="description" content=""> this is very imp tag which shows about the description. -->
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+<body>
+    <h1  style="text-align: center;" ><U>Getting Started with HTML</U>.</h1>
+    <h2 >About our webpage.</h2>
+    <h3>This is heading 3.</h3>
+    <h4>This is heading 4.</h4>
+    <!-- This is inline css-->
+     <p style="background-color: beige;">Lorem ipsum  dolor sit amet consectetur adipisicing elit. Iure magni at ipsum.</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque totam autem fuga cupiditate eveniet quod numquam, repudiandae sit sequi velit omnis doloribus officia,quisquam molestias debitis? Adipisci, maxime molestiae quod laboriosam dolorem itaque nemo possimus culpa debitis necessitatibus porro.\</p>
+<hr color="black">
+    <!-- LEARNING ABOUT TABLES,ADD IMG LINKS,LISTS AND Defination TAG. -->
+
+    <h1>Here we are learning how to add image into our webpage.</h1>
+    <img width="400" height= "230" src="Train.png" alt="Train Image">
+    <!-- <img height= "250" src="Train.png" alt="Train Image"> -->
+    <br>
+    <table>
+        <caption> <b><U>Student Details</U></b></caption>
+        <thead>
+            <!--  header content -->
+       HEADER TAG.
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Fav language</th>
+          
+           </thead>
+
+        </tr>
+        <tbody>
+        <tr>
+            <td>Jatin</td>
+            <td>Aiml</td>
+            <td>Python</td>
+          
+         
+        </tr>
+        <tr>
+            <td colspan="2">Shambhavi</td>
+            <td rowspan="2">Aiml</td>
+        </tr>
+        <tr>
+             <td colspan="2">Shambhavi</td>
+             </tr>
+            </tbody>  
+            <tfoot>
+                <tr>
+                    <td colspan="2">Shambhavi</td>
+                    <td rowspan="2">Foot</td>
+                    </tr>
+            </tfoot>
+    </table>
+ <B>   Now learning about the list in html which is very commonly used</B>
+ <ul type = "circle">
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+ </ul>
+<p><b>These are the different types of bullets used to display the ordered list.</b></p>
+ <ol><b>
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+    </b>
+ </ol>
+ 
+ <ol type="A"><b>
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+    </b>
+ </ol>
+ 
+ <ol type="I"><b>
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+    </b>
+ </ol>
+
+ <ol type="i"><b>
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+    </b>
+ </ol>
+ 
+ <ol type="a"><b>
+    <li>Jatin</li>
+    <li>Vedant</li>
+    <li>Raju</li>
+    <li>Cheenu</li>
+    </b>
+ </ol>
+
+ <b>Defination list in html</b>
+ <h1>HTML Defination List</h1>
+ <dl>
+    <dt>HTML:</dt>
+<dd>The Hypertext markup language: The standard language used for creating web pages.</dd><br>
+<dt>CSS:</dt>
+<dd>Cascading style sheets: A stylesheet language used for describing the look and formating of a document written in HTML.</dd><br>
+<dt>JavaScript:</dt>
+<dd>A programming language which is used to add functionality to the webpages
+</dd>
+</dl>
+<h1 id="visit">Visit to the websites by directly clicking on it.</h1>
+<p><a target="_blank" id="google" href="https://google.com">Google</a></p>
+<p><a target="_blank" id="myntra" href="https://myntra.com">Myntra</a></p>
+<p><a target="_blank" id="kaggle" href="https://kaggle.com">Kaggle</a></p>
+<hr color="black">
+    <!-- LEARNING ABOUT FORMS IN HTML  -->
+
+<H1><b>Here We are learning about forms by using multiple tags like input,label,forms,div and textarea.</b></p></H1>
+<p>This is used to draw the horizontal line in the webpage.</p>
+
+<h1>Form of Application for Sigma Development Course - TA</h1>
+
+<form action="/submit" method="post">
+        <!-- <form action="post"></form> -->
+        <h2><b>Learning about the input text,radio button or checkbox click.</b></h2>
+        <p><b>Also Learning to use the div tags which allows to create a seperate space.</b></p>
+        <div>
+
+            <!-- <input type="text" name="username" placeholder="Enter your username"> -->
+            <label for="username"><b>Enter your Username:</b></label>
+            <input type="text" id="username" name = "username" placeholder="Enter your username:"  autofocus>
+        </div>
+            
+<div>
+
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="Male">Male</label>
+</div>
+
+<div>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes" >
+    <label for="subscribe">Subscribe to my newspaper</label>
+</div>
+
+<div>
+    <p><b>What is text area tag?</b></p>
+    <label for="comment">Enter your comment</label>
+    <br> <!--not recommended.-->
+   <textarea name = "comment" rows="4" cols="40"  >
+    Enter the text here....
+   </textarea>
+</div>
+
+<div>
+    <select name="fruits" >
+     <option value="Apple">Apple</option> 
+  <option value="Banana">Banana</option>
+  <option value="Cherry">Cherry</option>   
+    </select>
+</div>
+<input type="submit" value="Submit" />
+    </form action="/submit" method="post">
+    <hr color="black">  
+    <h1>Learning about inline and block elements.</h1>
+    <p id="block">This is block element which takes the entire space of the page.</p>
+    <span>This is Inline element which only acquire the space of certain words.</span>
+    <h1>Building a Form which consist or name,city,and pincode of a user.Vertically</h1>
+    <p>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </p>
+    <p>
+        <label for="city">City Name:</label>
+        <input type="text" id="city" placeholder="Enter your city" autofocus>
+    </p>
+    <p>
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" placeholder="Enter Pincode" autofocus>
+    </p>
+    <p>
+    <input type="checkbox" id="tick" value="yes">
+    <label for="tick">Tick if you have filled every blanks.</label>
+</p>
+<p>
+    <label for="sub">Click to Submit:</label>
+    <input type="submit" id="sub" value="Submit">
+</p>
+<hr color="black">
+<h1>Learning about id and classes which can also be used to make menu for a webpage.</h1>
+<p><b>Table of Contents i.e visiting to topics directly.</b></p>
+<a href="#visit">Check here for accessing the websites.</a>
+<div>
+<a style="background-color:lightgreen;" href="#google">Google</a>
+    <a style="background-color: magenta;" href="#myntra">Myntra</a>
+    <a style="background-color: aqua;" href="#kaggle">Kaggle</a>
+</div>
+<hr color="black">
+<p>Adding Images and media which can be audio,vid and even poster too.</p>
+<Div>Adding Video--<br>
+    <video height="300" width="400" src="Video by leisurymeals insta.mp4"  controls poster="pizza.jpeg"></video>
+</Div>
+<div>
+Adding an Image--<br>
+<img height="300" width="400" src="Indian_Air_Force_Garud_Special_Forces_(2).jpg" alt="Indian Army Image.">
+</div>
+<img height="300" width="400" src="bloodshed chava.jpg" alt="Chaava">
+<p> Adding Music or Audio--<br> <audio src="192-Ghamand Kar - Tanhaji - The Unsung Warrior 192 Kbps.mp3" controls>Ghamand kar</audio></p>
+</body>
+</html>
